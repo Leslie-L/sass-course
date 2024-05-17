@@ -2,26 +2,72 @@ $primary-color:#FFEFE7;
 $secundary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
 $primary-text-color:#7C6A0A;
-
+$background: #FA9500;
 $font-stackl: 'IBM Plex Sans' , sans-serif; 
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
+    background-color: $primary-color;
+    font-family: $font-stackl;
 }
 .navbar{
-    background-color: $primary-color;
-    width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-text-color;
+    padding: 5px 15px;
+    p{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .icon{
+        display: flex;
+        button{
+            background: none;
+            border: none;
+        }
+    }
+}
+article{
+    color:$primary-text-color;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    .impact-section{
+       width: 100%;
+       h1{
+        font-size: 3em;
+       }
+       p{
+        font-size:1.3em;
+       }
+       button{
+        padding: 15px;
+        color: $primary-color;
+        background-color: $background;
+        border: none;
+        border-radius: 40px;
+        font-weight: bold;
+       }
+    }
+    .image-section{
+        width: 100%;
+        img{
+            width: 100%;
+            border-radius: 10px;
+
+        }
+    }
 }
 main{
     background-color: $primary-color;
 
 }
 footer{
-    $background: #FA9500;
+    
     background-color: $background;
     width: 100%;
     height: 250px;

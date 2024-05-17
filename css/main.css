@@ -2,13 +2,59 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: red;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .navbar {
-  background-color: #FFEFE7;
-  width: 100%;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7C6A0A;
+  padding: 5px 15px;
+}
+.navbar p {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.navbar .icon {
+  display: flex;
+}
+.navbar .icon button {
+  background: none;
+  border: none;
+}
+
+article {
+  color: #7C6A0A;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+article .impact-section {
+  width: 100%;
+}
+article .impact-section h1 {
+  font-size: 3em;
+}
+article .impact-section p {
+  font-size: 1.3em;
+}
+article .impact-section button {
+  padding: 15px;
+  color: #FFEFE7;
+  background-color: #FA9500;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+}
+article .image-section {
+  width: 100%;
+}
+article .image-section img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 main {
