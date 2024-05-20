@@ -155,9 +155,17 @@ section{
             align-items: center;
             column-gap: 100px;
             row-gap: 25px;
+            @include mobile() {
+                margin-left: 30px;
+                flex-wrap: nowrap;
+                gap: 15px;
+                overflow-x: scroll;
+                padding-left: 125px;
+             }
         }
         .product-card{
             width: 200px;
+            min-width: 200px;
             height: auto;
             display: flex;
             background-color: $secundary-color;
@@ -171,6 +179,7 @@ section{
             }
             img{
                 width: 150px;
+                
                 height: 180px;
                 object-fit: cover;
                 border-radius: 4px;
