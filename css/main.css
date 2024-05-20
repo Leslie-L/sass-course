@@ -70,6 +70,7 @@ article .image-section img {
 section {
   width: 100%;
   height: auto;
+  margin-bottom: 40px;
 }
 section h2 {
   color: #7C6A0A;
@@ -86,6 +87,7 @@ section .health-care .card-section, section .furniture .card-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 25px;
@@ -119,6 +121,38 @@ section .furniture .product-card {
   color: white;
 }
 
+.about-us h2 {
+  margin-left: 30px;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 520px) {
+  .about-section {
+    flex-direction: column;
+  }
+}
+.about-section .earth, .about-section .innovation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FA9500;
+  font-weight: bold;
+  gap: 10px;
+}
+.about-section .earth p, .about-section .innovation p {
+  max-width: 164px;
+}
+@media screen and (max-width: 520px) {
+  .about-section .earth, .about-section .innovation {
+    flex-direction: column;
+  }
+}
 main {
   background-color: #FFEFE7;
 }

@@ -17,6 +17,11 @@ para usar el mixing
 @include flexCenter(column, space-around);
 @include flexCenter(column);
 */
+@mixin mobile{
+    @media screen and (max-width: 520px) {
+        @content
+    }
+}
 body{
     margin: 0;
     padding: 0;
@@ -79,7 +84,7 @@ article{
 section{
     width: 100%;
     height: auto;
-    
+    margin-bottom: 40px;
     h2{
         color: $primary-text-color;
         font-size: 1.7em;
@@ -96,6 +101,7 @@ section{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             column-gap: 100px;
             row-gap: 25px;
         }
@@ -130,6 +136,40 @@ section{
             background-color: $tertiary-color;
             color: white;
         }
+    }
+}
+.about-us{
+    h2{
+        margin-left: 30px;
+    }
+}
+.about-section{
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+   
+    @include mobile() {
+        flex-direction: column;
+     }
+    .earth{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $background;
+        font-weight: bold;
+        gap: 10px;
+        p{
+            max-width: 164px;
+        }
+        @include mobile() {
+           flex-direction: column;
+        }
+    }
+
+    .innovation{
+        @extend .earth;
     }
 }
 main{
