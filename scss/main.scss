@@ -5,6 +5,18 @@ $primary-text-color:#7C6A0A;
 $background: #FA9500;
 $font-stackl: 'IBM Plex Sans' , sans-serif; 
 
+@mixin flexCenter($direction, $content: null, $align: null){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+/*
+para usar el mixing
+@include flexCenter(row, space-between, center);
+@include flexCenter(column, space-around);
+@include flexCenter(column);
+*/
 body{
     margin: 0;
     padding: 0;
@@ -83,6 +95,7 @@ section{
             max-width: 800px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             column-gap: 100px;
             row-gap: 25px;
         }
@@ -109,6 +122,13 @@ section{
                 margin-bottom: 0;
             }
             
+        }
+    }
+    .furniture{
+        @extend .health-care;
+        .product-card{
+            background-color: $tertiary-color;
+            color: white;
         }
     }
 }

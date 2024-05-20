@@ -1,3 +1,9 @@
+/*
+para usar el mixing
+@include flexCenter(row, space-between, center);
+@include flexCenter(column, space-around);
+@include flexCenter(column);
+*/
 body {
   margin: 0;
   padding: 0;
@@ -69,21 +75,22 @@ section h2 {
   color: #7C6A0A;
   font-size: 1.7em;
 }
-section .health-care h2 {
+section .health-care h2, section .furniture h2 {
   font-weight: 300;
   margin-bottom: 30px;
   margin-left: 15px;
 }
-section .health-care .card-section {
+section .health-care .card-section, section .furniture .card-section {
   margin: 0 auto;
   max-width: 800px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 25px;
 }
-section .health-care .product-card {
+section .health-care .product-card, section .furniture .product-card {
   width: 200px;
   height: auto;
   display: flex;
@@ -93,19 +100,23 @@ section .health-care .product-card {
   border-radius: 4px;
   color: #7C6A0A;
 }
-section .health-care .product-card svg {
+section .health-care .product-card svg, section .furniture .product-card svg {
   align-self: flex-end;
   padding: 5px;
 }
-section .health-care .product-card img {
+section .health-care .product-card img, section .furniture .product-card img {
   width: 150px;
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
 }
-section .health-care .product-card h4 {
+section .health-care .product-card h4, section .furniture .product-card h4 {
   margin-bottom: 0;
+}
+section .furniture .product-card {
+  background-color: #BABD8D;
+  color: white;
 }
 
 main {
