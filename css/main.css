@@ -178,7 +178,7 @@ section .furniture .product-card {
   max-width: 900px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   margin: 0 auto;
 }
 .gallery .gallery-images img {
@@ -186,10 +186,15 @@ section .furniture .product-card {
   height: 200px;
   border-radius: 8px;
 }
+.gallery .gallery-images img:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
 @media screen and (max-width: 520px) {
   .gallery .gallery-images {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 }
 
