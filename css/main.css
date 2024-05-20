@@ -14,8 +14,8 @@ body {
   color: #7C6A0A;
   padding: 5px 15px;
 }
-.navbar p {
-  font-size: 2.5em;
+.navbar span {
+  font-size: 2em;
   font-weight: bold;
 }
 .navbar .icon {
@@ -31,6 +31,7 @@ article {
   padding: 15px;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 article .impact-section {
   width: 100%;
@@ -53,8 +54,58 @@ article .image-section {
   width: 100%;
 }
 article .image-section img {
-  width: 100%;
+  width: 85%;
+  max-height: 500px;
   border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 1.7em;
+}
+section .health-care h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+section .health-care .card-section {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 25px;
+}
+section .health-care .product-card {
+  width: 200px;
+  height: auto;
+  display: flex;
+  background-color: #FFDAC6;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  color: #7C6A0A;
+}
+section .health-care .product-card svg {
+  align-self: flex-end;
+  padding: 5px;
+}
+section .health-care .product-card img {
+  width: 150px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+section .health-care .product-card h4 {
+  margin-bottom: 0;
 }
 
 main {
