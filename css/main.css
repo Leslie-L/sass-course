@@ -19,6 +19,7 @@ body {
   align-items: center;
   color: #7C6A0A;
   padding: 5px 15px;
+  position: relative;
 }
 .navbar span {
   font-size: 1.8em;
@@ -30,6 +31,40 @@ body {
 .navbar .icon button {
   background: none;
   border: none;
+}
+@media screen and (max-width: 520px) {
+  .navbar .icon {
+    display: none;
+  }
+}
+.navbar .menu-mobil {
+  display: none;
+  background: none;
+  border: none;
+}
+@media screen and (max-width: 520px) {
+  .navbar .menu-mobil {
+    display: inline;
+  }
+}
+.navbar .mobile-menu-content {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .navbar .mobile-menu-content.open {
+    display: flex;
+    border-radius: 8px;
+    background: pink;
+    padding: 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+  .navbar .mobile-menu-content.open button {
+    border: none;
+    background: none;
+  }
 }
 
 article {
