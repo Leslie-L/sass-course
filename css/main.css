@@ -69,6 +69,8 @@ body {
 
 article {
   color: #7C6A0A;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 15px;
   display: flex;
   align-items: center;
