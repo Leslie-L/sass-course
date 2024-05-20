@@ -211,6 +211,30 @@ section{
          }
     }
 }
+.location{
+    color: $background;
+    h2{
+        margin-left: 30px;
+    }
+    .location-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .map { 
+        width: 100%; 
+        max-width: 700px;
+        height: 400px; 
+        box-shadow: 5px 5px 5px #888; 
+    }
+    .p1{
+        font-weight: bold;
+        font-weight: 1.5em;
+    }
+}
+ 
 main{
     background-color: $primary-color;
 
