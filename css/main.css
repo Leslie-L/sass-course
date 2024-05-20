@@ -179,6 +179,9 @@ section .health-care .product-card img, section .furniture .product-card img {
 section .health-care .product-card h4, section .furniture .product-card h4 {
   margin-bottom: 0;
 }
+section .health-care .product-card p, section .furniture .product-card p {
+  padding: 5px 25px;
+}
 section .furniture .product-card {
   background-color: #BABD8D;
   color: white;
@@ -261,6 +264,7 @@ section .furniture .product-card {
   max-width: 700px;
   height: 400px;
   box-shadow: 5px 5px 5px #888;
+  border-radius: 5px;
 }
 .location .p1 {
   font-weight: bold;
