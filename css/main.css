@@ -153,6 +153,28 @@ section .furniture .product-card {
     flex-direction: column;
   }
 }
+.gallery h2 {
+  margin-left: 30px;
+}
+.gallery .gallery-images {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+.gallery .gallery-images img {
+  width: 240px;
+  height: 200px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 520px) {
+  .gallery .gallery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 main {
   background-color: #FFEFE7;
 }
